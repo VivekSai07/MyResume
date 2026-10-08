@@ -1,0 +1,207 @@
+\documentclass[A4,10.5pt]{article}
+% \documentclass[letterpaper,11pt]{article} %For use in US
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=NavyBlue, citecolor=blue]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+\usepackage{palatino}
+\usepackage{tabularx} 
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.7in}
+
+\urlstyle{same}
+
+\definecolor{datecolor}{HTML}{2E6DA4}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0cm}
+
+\titleformat{\section}{  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+
+\pdfgentounicode=1
+\newcommand{\CVItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\CVSubheading}[4]{
+  \vspace{3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{p{0.8\textwidth}@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small\textcolor{datecolor}{#2} \\
+      \textit{\small #3} & \textit{\small\textcolor{datecolor}{#4}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\CVSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \text{\small#1} & \text{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVProject}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{p{0.9\textwidth}@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      % \small#3 & \\
+    \end{tabular*}\vspace{0pt}
+}
+
+\newcommand{\CVWorkExp}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{p{0.8\textwidth}@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      % \small#3 & \\
+    \end{tabular*}
+}
+
+
+
+\newcommand{\CVEduItem}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} $|$ \small\textit{#3}, #4 & \small\textcolor{datecolor}{#2} \\
+    \end{tabular*}\vspace{-15pt}
+}
+
+\newcommand{\CVSubItem}[1]{\CVItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.5cm, label={}]}
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} % Uncomment for US
+\newcommand{\CVSubHeadingListEnd}{\end{itemize}}
+\newcommand{\CVItemListStart}{\begin{itemize}}
+\newcommand{\CVItemListEnd}{\end{itemize}\vspace{-11pt}}
+
+%------------------------------------------------------------------------------
+% CV STARTS HERE  %
+%------------------------------------------------------------------------------
+\begin{document}
+
+
+%==================== HEADER ====================%
+\begin{center}
+    \textbf{\huge Vivek Sai} \\ \vspace{2pt}
+    \small
+    +49 155 10421564 \;|\;
+    \href{mailto:viveksaisurya07@gmail.com}{\underline{viveksaisurya07@gmail.com}} \;|\;
+    \href{https://www.linkedin.com/in/vivek-sai-5b363221a/}{\underline{LinkedIn}} \;|\;
+    \href{https://github.com/VivekSai07}{\underline{GitHub}} \;|\;
+    \href{https://vivek-portfolio-mocha.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+\vspace{-8pt}
+
+\section{Education}
+  \CVSubHeadingListStart
+    \CVEduItem{M.Sc. Computer Science (Autonomous Systems)}{Oct 2024 -- Present}{University of Stuttgart}{Stuttgart, Germany}
+    \CVEduItem{B.Tech. Computer Science \& Engineering (AI)}{Oct 2020 -- Apr 2024}{Amrita Vishwa Vidyapeetham}{Chennai, India}
+  \CVSubHeadingListEnd
+
+%-----WORK EXPERIENCE----------------------------------------------------------
+\vspace{4pt}
+\section{Work Experience}
+\CVSubHeadingListStart
+\CVSubheading
+  {Working Student -- Humanoid Robotics, Development \& Validation}{Apr 2026 -- Present}
+  {Porsche Engineering Services GmbH}{Stuttgart, Germany}
+\CVItemListStart
+    \CVItem{Developed and integrated robotics software for Unitree Go2 (quadruped) and G1 (humanoid) robots using ROS~2, NVIDIA Isaac ROS, and Jetson, enabling perception, localization, and navigation capabilities.}
+    % \CVItem{Designed and optimized end-to-end perception pipelines (sensor integration, SLAM, visual odometry, 3D mapping), reducing [TODO: e.g. localization drift by X\% / pipeline failure rate from X to Y] through targeted debugging and tuning.}
+    \CVItem{Built and maintained Docker-based deployment workflows for embedded robotics applications, debugging complex middleware, networking, dependency, and containerization challenges across development and production environments.}
+    \CVItem{Integrated and evaluated hardware components including cameras, audio systems, and onboard compute, while contributing to simulation, visualization, and real-world robot validation.}
+    \CVItem{Collaborated with cross-functional engineering teams through code reviews, technical documentation, and feature validation, delivering production-ready robotics software and deployment improvements.}
+\CVItemListEnd
+\CVSubheading
+  {Student Assistant}{Nov 2025 -- Jun 2026}
+  {Socially Intelligent Robotics (SIR) Lab, University of Stuttgart}{Stuttgart, Germany}
+\CVItemListStart
+    \CVItem{Performed complete hardware bring-up and configuration of 2 FER robotic platforms, enabling stable, reproducible operation across research experiments.}
+    \CVItem{Debugged hardware--software integration issues, cutting experiment setup failures by $\sim$40\% and improving uptime.}
+    \CVItem{Prototyped and evaluated learning-based robotic behaviors in NVIDIA Isaac Sim, focusing on sim-to-real transfer.}
+\CVItemListEnd
+\CVSubheading
+  {Student Assistant}{Dec 2024 -- Mar 2026}
+  {Construction Robotics, University of Stuttgart}{Stuttgart, Germany}
+\CVItemListStart
+    \CVItem{Developed ROS~2-based robotic software for manipulation tasks, including perception integration, task execution, and motion coordination.}
+    \CVItem{Implemented and validated pose estimation and control loops, conducting sim-to-real validation that identified a $\sim$15\% perception accuracy gap and reduced it to under 5\% through calibration and pipeline tuning.}
+    \CVItem{Trained a PPO-based reinforcement learning policy for peg-in-hole insertion on a Franka arm in simulation, tuning reward shaping, action space, and hyperparameters to improve policy convergence.}
+    \CVItem{Trained a SmolVLA (VLA) model on a SO-100 arm in NVIDIA Isaac Sim, achieving 40--60\% inference success.}
+\CVItemListEnd
+\CVSubheading
+  {Research Intern}{Jun 2023 -- Aug 2023}
+  {IIITDM Kancheepuram}{Chennai, India}
+\CVItemListStart
+    \CVItem{Implemented and benchmarked deep learning models (CNNs, Vision Transformers) in PyTorch/TensorFlow, with data preprocessing, augmentation, and evaluation pipelines to analyze robustness and generalization.}
+\CVItemListEnd
+\CVSubHeadingListEnd
+
+%-----PROJECTS AND RESEARCH----------------------------------------------------
+% \vspace{0.5pt}
+\section{Projects}
+\CVSubHeadingListStart
+    \CVProject
+      {ContactPilot — Vision-Based Robotic Grasping Pipeline $|$ \emph{\small{Python, PyTorch, MuJoCo, Open3D, SAM 3, LLMs}}}{}
+    \CVItemListStart
+        \CVItem{Built an end-to-end pick-and-place pipeline for a Franka Panda arm with two interchangeable 6-DoF grasp backends (Contact-GraspNet, NVIDIA GraspGen), multi-camera point-cloud fusion, and vision-only occupancy-based bin placement for collision-free packing.}
+        \CVItem{Designed a seed-based benchmarking harness with automated failure-taxonomy analysis, raising pick-and-place success from 38\% to a sustained 100\% (30/30 objects, 10-seed benchmark); added SAM 3 promptable object selection (mask IoU 0.29 $\to$ 0.89--0.99) and an LLM instruction parser (Llama 3.1 via NVIDIA NIM) for multi-step free-text commands.}
+    \CVItemListEnd
+    \vspace{8pt}
+    \CVProject
+      {Vision-Language-Control Robot in Simulation $|$ \emph{\small{MuJoCo, Python}}}{}
+    \CVItemListStart
+        \CVItem{Developed a simulation-based robotic system combining state estimation, decision logic, and motion execution, using simulation to prototype, debug, and validate perception-to-action pipelines in a controlled environment.}
+    \CVItemListEnd
+    \vspace{8pt}
+    \CVProject
+      {Differential Drive FusionBot: From CAD to Autonomous Mapping $|$ \emph{\small{ROS~2, Python}}}{}
+    \CVItemListStart
+        \CVItem{Designed a mobile robot from CAD to URDF, integrating sensors and control interfaces.}
+        \CVItem{Implemented Nav2-based path planning and AMCL localization in a ROS~2 architecture, achieving a 90\% autonomous navigation success rate across repeated test runs.}
+    \CVItemListEnd
+\CVSubHeadingListEnd
+    
+
+\vspace{-6pt}
+\section*{Skills}
+\begin{tabular}{p{0.20\textwidth} p{0.80\textwidth}}
+\textbf{Programming:} & C++, Python, Linux/Bash \\
+\textbf{Robotics:} & ROS~2, robot kinematics, motion execution, path planning, localization, sim-to-real transfer \\
+\textbf{Perception:} & Intel RealSense D435i, NVIDIA cuVSLAM, nvblox, camera calibration, 6D pose estimation (AprilTag) \\
+\textbf{Simulation:} & NVIDIA Isaac Sim, MuJoCo, Gazebo, URDF \\
+\textbf{ML / Deep Learning:} & PyTorch, CNNs, Vision Transformers, reinforcement learning (PPO), VLA models (SmolVLA), model evaluation \\
+\textbf{Hardware:} & Unitree Go2 (quadruped), Unitree G1 (humanoid), Jetson Orin NX, FER robotic platforms, SO-100 \\
+\textbf{Tools:} & Git, Docker, unitree\_sdk2 \\
+\textbf{Languages:} & English (C1), German (A1)
+\end{tabular}
+
+
+
+
+% \vspace{2pt}
+% \section{Journal Publications}
+% \CVSubHeadingListStart
+%   \item \small \href{https://link.springer.com/article/10.1007/s42979-025-03862-0}{HybridViT: An Approach for Alzheimer’s Disease Classification with ADNI Neuroimaging Data} \hfill Apr 2025 \\
+%   \textit{Springer Nature Computer Science}
+% \CVSubHeadingListEnd
+
+
+\end{document}
