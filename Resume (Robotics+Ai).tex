@@ -120,13 +120,15 @@
 \section{Work Experience}
 \CVSubHeadingListStart
 \CVSubheading
-  {Working Student -- Humanoid Robotics, Development \& Validation}{Apr 2026 -- Present}
+  {Intern -- Humanoid Robotics, Development \& Validation}{Oct 2026 -- Present}
   {Porsche Engineering Services GmbH}{Stuttgart, Germany}
+\CVSubSubheading
+  {Working Student -- Humanoid Robotics, Development \& Validation}{Apr 2026 -- Sep 2026}
 \CVItemListStart
-    \CVItem{Deployed and validated an NVIDIA cuVSLAM + nvblox perception-localization stack on Unitree Go2/G1 (Jetson Orin NX, RealSense D435i), resolving DDS, TF-tree, and domain-ID conflicts to sustain 30~Hz visual odometry and real-time 3D reconstruction.}
-    \CVItem{Unified Go2 and G1 onto a single arm64 YOLOv8/TensorRT detection pipeline (Isaac ROS), fixing build, QoS, and runtime defects to reach real-time detections at $\sim$24~Hz on embedded Jetson hardware.}
+    \CVItem{Deployed and validated NVIDIA cuVSLAM + nvblox on Unitree Go2/G1 (Jetson Orin NX, RealSense D435i), resolving DDS, TF-tree, and domain-ID conflicts to sustain 30~Hz visual odometry and real-time 3D reconstruction.}
+    \CVItem{Unified Go2 and G1 onto a single arm64 YOLOv8/TensorRT detection pipeline (Isaac ROS), resolving build, QoS, and runtime defects to achieve real-time detections at $\sim$24~Hz on Jetson.}
     \CVItem{Designed a SOLID-refactored ROS~2 service converting 2D object detections into 3D poses at 30~Hz with full unit-test coverage, enabling downstream navigation and manipulation.}
-    \CVItem{Re-architected the robot audio stack: unified text-to-speech into a shared cross-robot scheduler and shipped a swappable ASR backend (Nemotron) with VAD-based turn detection and wake-word gating.}
+    \CVItem{Re-architected the robot audio stack: shared cross-robot TTS scheduler and swappable ASR backend (Nemotron) with VAD-based turn detection and wake-word gating.}
 \CVItemListEnd
 \CVSubheading
   {Student Assistant}{Nov 2025 -- Jun 2026}
