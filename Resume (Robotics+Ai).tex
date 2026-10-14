@@ -156,21 +156,21 @@
 \section{Projects}
 \CVSubHeadingListStart
     \CVProject
-      {ContactPilot — Vision-Based Robotic Grasping Pipeline $|$ \emph{\small{Python, PyTorch, MuJoCo, Open3D, SAM 3, LLMs}}}{}
+      {\href{https://github.com/VivekSai07/ContactPilot}{ContactPilot} — Vision-Based Robotic Grasping Pipeline $|$ \emph{\small{Python, PyTorch, MuJoCo, Open3D, SAM 3, LLMs}}}{}
     \CVItemListStart
         \CVItem{Built an end-to-end pick-and-place pipeline for a Franka Panda arm with two interchangeable 6-DoF grasp backends (Contact-GraspNet, NVIDIA GraspGen), multi-camera point-cloud fusion, and vision-only occupancy-based bin placement for collision-free packing.}
         \CVItem{Designed a seed-based benchmarking harness with automated failure-taxonomy analysis, raising pick-and-place success from 38\% to a sustained 100\% (30/30 objects, 10-seed benchmark); added SAM 3 promptable object selection (mask IoU 0.29 $\to$ 0.89--0.99) and an LLM instruction parser (Llama 3.1 via NVIDIA NIM) for multi-step free-text commands.}
     \CVItemListEnd
     \CVProject
-      {VLA Generalization Study: SmolVLA vs.\ X-VLA on Franka Panda $|$ \emph{\small{Python, MuJoCo, robosuite, HuggingFace}}}{}
+      {\href{https://github.com/VivekSai07/franka-vla-generalization}{VLA Generalization Study}: SmolVLA vs.\ X-VLA on Franka Panda $|$ \emph{\small{Python, MuJoCo, robosuite, HuggingFace}}}{}
     \CVItemListStart
         \CVItem{Designed a systematic multi-axis generalization study (spatial, language, distractors) fine-tuning SmolVLA and X-VLA on sealed, scripted datasets (24--560 episodes); published 7 datasets and 9 model checkpoints to Hugging Face.}
         \CVItem{X-VLA reached 88.1\% on unseen colour-instruction pairs (held-out within 10 pts of trained) and 94.4\% on language grounding with no positional shortcut verified; identified and fixed a classifier bug via video inspection.}
     \CVItemListEnd
     \CVProject
-      {Vision-Language-Control Robot in Simulation $|$ \emph{\small{MuJoCo, Python}}}{}
+      {\href{https://github.com/VivekSai07/amr_odom}{3D LiDAR Odometry} (MAD-ICP) $|$ \emph{\small{C++, ROS~2, Eigen, Python}}}{}
     \CVItemListStart
-        \CVItem{Developed a simulation-based robotic system combining state estimation, decision logic, and motion execution, using simulation to prototype, debug, and validate perception-to-action pipelines in a controlled environment.}
+        \CVItem{Implemented a MAD-ICP-inspired 3D LiDAR odometry system in C++ (Eigen-only core + ROS~2 Humble wrapper); source-voxel downsampling (0.15~m) gave $\sim$1.9$\times$ wall-clock speedup on 128-beam LiDAR, achieving ATE RMSE 0.014~m (handheld), RPE drift 2.8\%/4.4\% on SPOT loop/stair datasets.}
     \CVItemListEnd
 \CVSubHeadingListEnd
     

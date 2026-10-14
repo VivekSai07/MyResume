@@ -69,6 +69,12 @@ Dec 2024 -- Mar 2026 | Stuttgart, Germany
 
 ## Projects — Cut / Archived
 
+### Vision-Language-Control Robot in Simulation
+Cut 2026-10-14 — replaced by amr_odom (3D LiDAR odometry). Project was fabricated filler with no real code/results; both it and ContactPilot cover the same perception-to-action pipeline idea.
+Keywords covered: MuJoCo, Python, state estimation, perception-to-action, simulation.
+
+- Developed a simulation-based robotic system combining state estimation, decision logic, and motion execution, using simulation to prototype, debug, and validate perception-to-action pipelines in a controlled environment.
+
 ### Differential Drive FusionBot: From CAD to Autonomous Mapping
 Cut 2026-10-14 — replaced by franka-vla-generalization project (more JD-relevant: VLA fine-tuning, generalization study, HuggingFace publishing).
 Keywords covered: ROS 2, Nav2, AMCL, URDF, CAD, path planning, localization, mobile robotics.
