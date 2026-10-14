@@ -123,11 +123,10 @@
   {Working Student -- Humanoid Robotics, Development \& Validation}{Apr 2026 -- Present}
   {Porsche Engineering Services GmbH}{Stuttgart, Germany}
 \CVItemListStart
-    \CVItem{Developed and integrated robotics software for Unitree Go2 (quadruped) and G1 (humanoid) robots using ROS~2, NVIDIA Isaac ROS, and Jetson, enabling perception, localization, and navigation capabilities.}
-    % \CVItem{Designed and optimized end-to-end perception pipelines (sensor integration, SLAM, visual odometry, 3D mapping), reducing [TODO: e.g. localization drift by X\% / pipeline failure rate from X to Y] through targeted debugging and tuning.}
-    \CVItem{Built and maintained Docker-based deployment workflows for embedded robotics applications, debugging complex middleware, networking, dependency, and containerization challenges across development and production environments.}
-    \CVItem{Integrated and evaluated hardware components including cameras, audio systems, and onboard compute, while contributing to simulation, visualization, and real-world robot validation.}
-    \CVItem{Collaborated with cross-functional engineering teams through code reviews, technical documentation, and feature validation, delivering production-ready robotics software and deployment improvements.}
+    \CVItem{Deployed and validated an NVIDIA cuVSLAM + nvblox perception-localization stack on Unitree Go2/G1 (Jetson Orin NX, RealSense D435i), resolving DDS, TF-tree, and domain-ID conflicts to sustain 30~Hz visual odometry and real-time 3D reconstruction.}
+    \CVItem{Unified Go2 and G1 onto a single arm64 YOLOv8/TensorRT detection pipeline (Isaac ROS), fixing build, QoS, and runtime defects to reach real-time detections at $\sim$24~Hz on embedded Jetson hardware.}
+    \CVItem{Designed \texttt{perception\_service}, a SOLID-refactored ROS~2 package converting 2D detections into 3D object poses at 30~Hz with full unit-test coverage, enabling downstream navigation and manipulation.}
+    \CVItem{Re-architected the robot audio stack: unified text-to-speech into a shared cross-robot scheduler and shipped a swappable ASR backend (Nemotron) with VAD-based turn detection and wake-word gating.}
 \CVItemListEnd
 \CVSubheading
   {Student Assistant}{Nov 2025 -- Jun 2026}
