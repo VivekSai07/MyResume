@@ -56,7 +56,7 @@
 }
 
 \newcommand{\CVProject}[2]{
-  \vspace{-2pt}\item
+  \vspace{3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{p{0.9\textwidth}@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       % \small#3 & \\
@@ -132,15 +132,13 @@
   {Student Assistant}{Nov 2025 -- Jun 2026}
   {Socially Intelligent Robotics (SIR) Lab, University of Stuttgart}{Stuttgart, Germany}
 \CVItemListStart
-    \CVItem{Performed complete hardware bring-up and configuration of 2 FER robotic platforms, enabling stable, reproducible operation across research experiments.}
-    \CVItem{Debugged hardware--software integration issues, cutting experiment setup failures by $\sim$40\% and improving uptime.}
+    \CVItem{Debugged hardware--software integration issues on 2 FER robotic platforms, cutting experiment setup failures by $\sim$40\% and improving uptime.}
     \CVItem{Prototyped and evaluated learning-based robotic behaviors in NVIDIA Isaac Sim, focusing on sim-to-real transfer.}
 \CVItemListEnd
 \CVSubheading
   {Student Assistant}{Dec 2024 -- Mar 2026}
   {Construction Robotics, University of Stuttgart}{Stuttgart, Germany}
 \CVItemListStart
-    \CVItem{Developed ROS~2-based robotic software for manipulation tasks, including perception integration, task execution, and motion coordination.}
     \CVItem{Implemented and validated pose estimation and control loops, conducting sim-to-real validation that identified a $\sim$15\% perception accuracy gap and reduced it to under 5\% through calibration and pipeline tuning.}
     \CVItem{Trained a PPO-based reinforcement learning policy for peg-in-hole insertion on a Franka arm in simulation, tuning reward shaping, action space, and hyperparameters to improve policy convergence.}
     \CVItem{Trained a SmolVLA (VLA) model on a SO-100 arm in NVIDIA Isaac Sim, achieving 40--60\% inference success.}
@@ -163,18 +161,16 @@
         \CVItem{Built an end-to-end pick-and-place pipeline for a Franka Panda arm with two interchangeable 6-DoF grasp backends (Contact-GraspNet, NVIDIA GraspGen), multi-camera point-cloud fusion, and vision-only occupancy-based bin placement for collision-free packing.}
         \CVItem{Designed a seed-based benchmarking harness with automated failure-taxonomy analysis, raising pick-and-place success from 38\% to a sustained 100\% (30/30 objects, 10-seed benchmark); added SAM 3 promptable object selection (mask IoU 0.29 $\to$ 0.89--0.99) and an LLM instruction parser (Llama 3.1 via NVIDIA NIM) for multi-step free-text commands.}
     \CVItemListEnd
-    \vspace{8pt}
+    \CVProject
+      {VLA Generalization Study: SmolVLA vs.\ X-VLA on Franka Panda $|$ \emph{\small{Python, MuJoCo, robosuite, HuggingFace}}}{}
+    \CVItemListStart
+        \CVItem{Designed a systematic multi-axis generalization study (spatial, language, distractors) fine-tuning SmolVLA and X-VLA on sealed, scripted datasets (24--560 episodes); published 7 datasets and 9 model checkpoints to Hugging Face.}
+        \CVItem{X-VLA reached 88.1\% on unseen colour-instruction pairs (held-out within 10 pts of trained) and 94.4\% on language grounding with no positional shortcut verified; identified and fixed a classifier bug via video inspection.}
+    \CVItemListEnd
     \CVProject
       {Vision-Language-Control Robot in Simulation $|$ \emph{\small{MuJoCo, Python}}}{}
     \CVItemListStart
         \CVItem{Developed a simulation-based robotic system combining state estimation, decision logic, and motion execution, using simulation to prototype, debug, and validate perception-to-action pipelines in a controlled environment.}
-    \CVItemListEnd
-    \vspace{8pt}
-    \CVProject
-      {Differential Drive FusionBot: From CAD to Autonomous Mapping $|$ \emph{\small{ROS~2, Python}}}{}
-    \CVItemListStart
-        \CVItem{Designed a mobile robot from CAD to URDF, integrating sensors and control interfaces.}
-        \CVItem{Implemented Nav2-based path planning and AMCL localization in a ROS~2 architecture, achieving a 90\% autonomous navigation success rate across repeated test runs.}
     \CVItemListEnd
 \CVSubHeadingListEnd
     
@@ -186,7 +182,7 @@
 \textbf{Robotics:} & ROS~2, robot kinematics, motion execution, path planning, localization, sim-to-real transfer \\
 \textbf{Perception:} & Intel RealSense D435i, NVIDIA cuVSLAM, nvblox, camera calibration, 6D pose estimation (AprilTag) \\
 \textbf{Simulation:} & NVIDIA Isaac Sim, MuJoCo, Gazebo, URDF \\
-\textbf{ML / Deep Learning:} & PyTorch, CNNs, Vision Transformers, reinforcement learning (PPO), VLA models (SmolVLA), model evaluation \\
+\textbf{ML / Deep Learning:} & PyTorch, CNNs, Vision Transformers, reinforcement learning (PPO), VLA fine-tuning (SmolVLA, X-VLA), model evaluation \\
 \textbf{Hardware:} & Unitree Go2 (quadruped), Unitree G1 (humanoid), Jetson Orin NX, FER robotic platforms, SO-100 \\
 \textbf{Tools:} & Git, Docker, unitree\_sdk2 \\
 \textbf{Languages:} & English (C1), German (A1)

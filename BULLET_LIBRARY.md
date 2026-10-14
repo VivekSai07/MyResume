@@ -44,9 +44,38 @@ Apr 2026 -- Present | Stuttgart, Germany
 - Led an architecture split of the perception-detection interface per code review, separating the swappable YOLOv8 backend from a stable pose-projection service. (software architecture, SOLID, code review)
 - Root-caused a TensorRT engine-build slowdown (confirmed via `tegrastats` the GPU was idle) and built an automatic workaround using raw TensorRT bindings, cutting engine build time to ~7 minutes with no manual steps. (TensorRT, CUDA, performance debugging)
 
+## Student Assistant — Socially Intelligent Robotics (SIR) Lab, University of Stuttgart
+Nov 2025 -- Jun 2026 | Stuttgart, Germany
+
+### Currently in resume (as of 2026-10-14)
+- Debugged hardware–software integration issues on 2 FER robotic platforms, cutting experiment setup failures by ~40% and improving uptime.
+- Prototyped and evaluated learning-based robotic behaviors in NVIDIA Isaac Sim, focusing on sim-to-real transfer.
+
+### Cut 2026-10-14 (replaced for space — merged into first bullet above)
+- Performed complete hardware bring-up and configuration of 2 FER robotic platforms, enabling stable, reproducible operation across research experiments.
+  *Keywords: hardware bring-up, platform configuration, reproducibility*
+
+## Student Assistant — Construction Robotics, University of Stuttgart
+Dec 2024 -- Mar 2026 | Stuttgart, Germany
+
+### Currently in resume (as of 2026-10-14)
+- Implemented and validated pose estimation and control loops, conducting sim-to-real validation that identified a ~15% perception accuracy gap and reduced it to under 5% through calibration and pipeline tuning.
+- Trained a PPO-based reinforcement learning policy for peg-in-hole insertion on a Franka arm in simulation, tuning reward shaping, action space, and hyperparameters to improve policy convergence.
+- Trained a SmolVLA (VLA) model on a SO-100 arm in NVIDIA Isaac Sim, achieving 40–60% inference success.
+
+### Cut 2026-10-14 (replaced for space — generic)
+- Developed ROS 2-based robotic software for manipulation tasks, including perception integration, task execution, and motion coordination.
+  *Keywords: ROS 2, manipulation, perception integration, task execution*
+
+## Projects — Cut / Archived
+
+### Differential Drive FusionBot: From CAD to Autonomous Mapping
+Cut 2026-10-14 — replaced by franka-vla-generalization project (more JD-relevant: VLA fine-tuning, generalization study, HuggingFace publishing).
+Keywords covered: ROS 2, Nav2, AMCL, URDF, CAD, path planning, localization, mobile robotics.
+
+- Designed a mobile robot from CAD to URDF, integrating sensors and control interfaces.
+- Implemented Nav2-based path planning and AMCL localization in a ROS 2 architecture, achieving a 90% autonomous navigation success rate across repeated test runs.
+
 ## Other roles
 
-Current resume bullets for Student Assistant (SIR Lab), Student Assistant (Construction Robotics), and
-Research Intern (IIITDM Kancheepuram) are unchanged since the last extraction into the vault — see
-`Master Resume.md` and `01_Profile/Resume History` for their full history. Not duplicated here to avoid
-two sources of truth; add a section here if/when those roles also need a cut-bullet pool.
+Research Intern (IIITDM Kancheepuram) bullets are unchanged — see `Master Resume.md` and `01_Profile/Resume History` for history.
