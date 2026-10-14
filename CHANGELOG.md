@@ -9,7 +9,7 @@ Pairs with git history — see `git log --follow -- "Resume (Robotics+Ai).tex"` 
 - Replaced all 4 Porsche Engineering Services bullets in `Resume (Robotics+Ai).tex` (generic, written
   before most of the 6-month internship's work had landed) with metrics-grounded bullets covering:
   perception/SLAM (cuVSLAM + nvblox, 30 Hz), object detection (YOLOv8/TensorRT, ~24 Hz),
-  `perception_service` (SOLID refactor, unit-tested), and the audio stack redesign (shared TTS
+  a SOLID-refactored detection-to-pose service (unit-tested), and the audio stack redesign (shared TTS
   scheduler + Nemotron ASR).
   - Source: `../WorkUpdates.md` entries from 22.04.2026 through 07.10.2026.
   - Skills applied: `tech-resume-optimizer`, `resume-bullet-writer`, `resume-quantifier`,
